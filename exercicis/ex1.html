@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="css.css" rel="stylesheet" type="text/css">
+    <title>Kebab Express</title>
+    <meta charset="utf-8">
+</head>
+<body class="cuerpo">
+    <header class="encabezado">
+        <div>
+            <img src="logo.png" alt="Logo Kebab Express" width="200" height="200" class="imagen">
+            <h1 id="titulo">Kebab Online</h1>
+            <h2 class="eslogan">¡Sabor auténtico a un clic!</h2>
+        </div>
+        <nav id="menuPrincipal">
+            <ul>
+                <li><a href="#" class="enlaceMenu">Inicio</a></li>
+                <li><a href="#" class="enlaceMenu">Productos</a></li>
+                <li><a href="#" class="enlaceMenu">Ofertas</a></li>
+                <li><a href="#" class="enlaceMenu">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <article class="itemKebab">
+            <h1>Durum Mixto</h1>
+            <img src="imagenes_ex1/DurumMixto.jpg" alt="Kebab Clásico" width="20%">
+            <h2>5€</h2>
+            <h4 class="descripcion">Delicioso kebab con carne de calidad y salsas especiales</h4>
+            <input class="botonComprar" type="button" value="Comprar">
+        </article>
+    </section>
+
+    <section>
+        <article class="itemKebab">
+            <h1>Durum Ternera</h1>
+            <img src="imagenes_ex1/DurumTernera.png" alt="Durum Ternera" width="20%">
+            <h2>5€</h2>
+            <h4 class="descripcion">Delicioso kebab con carne de calidad y salsas especiales</h4>
+            <input class="botonComprar" type="button" value="Comprar">
+        </article>
+    </section>
+
+    <section>
+        <article class="itemKebab">
+            <h1>Durum Pollo</h1>
+            <img src="imagenes_ex1/DurumPollo.png" alt="Durum Pollo" width="20%">
+            <h2>5€</h2>
+            <h4 class="descripcion">Delicioso kebab con carne de calidad y salsas especiales</h4>
+            <input class="botonComprar" type="button" value="Comprar">
+        </article>
+    </section>
+
+    <section>
+        <article class="itemKebab">
+            <h1>Kebab </h1>
+            <img src="imagenes_ex1/Kebab.jpg" alt="Kebab" width="20%">
+            <h2>5€</h2>
+            <h4 class="descripcion">Delicioso kebab con carne de calidad y salsas especiales</h4>
+            <input class="botonComprar" type="button" value="Comprar">
+        </article>
+    </section>
+
+    <form method="post" action="procesar_pedido.php" class="formularioPedido">
+        <br>
+        <input type="text" placeholder="Nombre completo" required>
+        <br>
+        <input type="checkbox" id="terminos" required>
+        <label for="terminos">Acepto los términos y condiciones</label>
+        <br>
+        <select>
+            <option value="kebab_clasico">Kebab Clásico</option>
+            <!-- Agrega más opciones de kebab según sea necesario -->
+        </select>
+        <textarea placeholder="Comentarios adicionales"></textarea>
+        <input class="botonEnviar" type="submit" value="Enviar Pedido">
+    </form>
+
+    <aside>
+        <div class="informacionAdicional">
+            <h1 class="piePagina">Más sobre Kebab Express</h1>
+            <p>Somos tu opción para disfrutar de los mejores kebabs en línea. ¡Haz tu pedido ahora y experimenta el auténtico sabor!</p>
+        </div>
+    </aside>
+
+    <footer class="piePagina">
+        &copy; 2024 Kebab Express - Todos los derechos reservados
+    </footer>
+</body>
+</html>
