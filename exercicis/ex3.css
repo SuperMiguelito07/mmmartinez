@@ -1,0 +1,193 @@
+.image-360 {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; /* Preserva la perspectiva */
+    transition: transform 0.5s; /* Agrega una transición suave */
+}
+
+.image-360:hover {
+    transform: rotateY(360deg); /* Rota la imagen 360 grados cuando se hace hover */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px; /* Agrega un espacio entre el contenido y los bordes del cuerpo */
+    color: #333; /* Color del texto principal */
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Permite que los elementos de la matriz se desborden a una nueva línea en pantallas pequeñas */
+    margin-bottom: 20px; /* Agrega un margen inferior entre contenedores */
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Permite que los elementos de la matriz se desborden a una nueva línea en pantallas pequeñas */
+    margin-bottom: 20px; /* Agrega un margen inferior entre contenedores */
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+    font-family: 'Arial Black', sans-serif; /* Fuente para los títulos */
+}
+
+p {
+    line-height: 1.6;
+    text-align: justify; /* Texto justificado */
+    margin-bottom: 20px; /* Agrega un margen inferior entre párrafos */
+}
+
+img.image-360 {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11),0 2px 2px rgba(0,0,0,0.11),0 4px 4px rgba(0,0,0,0.11),0 6px 8px rgba(0,0,0,0.11),0 8px 16px rgba(0,0,0,0.11);
+    margin-bottom: 20px; /* Agrega un margen inferior entre imágenes */
+}
+
+.agraiments {
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Permite que los elementos de la matriz se desborden a una nueva línea en pantallas pequeñas */
+    margin-bottom: 20px; /* Agrega un margen inferior entre contenedores */
+}
+
+iframe {
+    border-radius: 8px;
+    justify-content: space-around;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11),0 2px 2px rgba(0,0,0,0.11),0 4px 4px rgba(0,0,0,0.11),0 6px 8px rgba(0,0,0,0.11),0 8px 16px rgba(0,0,0,0.11);
+    margin-bottom: 20px; /* Agrega un margen inferior entre iframes */
+}
+
+iframe:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11),0 2px 4px rgba(0,0,0,0.11),0 4px 8px rgba(0,0,0,0.11),0 8px 16px rgba(0,0,0,0.11),0 16px 32px rgba(0,0,0,0.11);
+}
+
+.newspaper {
+    column-count: 3;
+    text-align: justify;
+    font-size: 1.2em; /* Tamaño del texto de noticias */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Fuente para el texto de noticias */
+    color: #666; /* Color del texto de noticias */
+    margin-bottom: 20px; /* Agrega un margen inferior entre columnas de periódico */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+
+.logo {
+    height: 200px;
+    object-fit: cover;
+    top: 0;
+    right: 0%;
+    z-index: 1000;
+    width: 100%;
+}
+
+header {
+    background-color: #f1f1f1;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0%;
+    z-index: 1000;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    overflow: hidden;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: #ddd;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+footer {
+    background-color: gainsboro;
+    position: static;
+    width: 100%;
+    top: 0;
+    right: 0%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px; /* Agrega un margen superior entre el contenido y el pie de página */
+    padding: 20px; /* Agrega espacio alrededor del pie de página */
+    color: #666; /* Color del texto del pie de página */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 576px) {
+    body {
+        background-color: rgb(100, 48, 48);
+    }
+    .newspaper {
+        column-count: 1;
+        font-size: 1em;
+    }
+    .container, .container2, .agraiments {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container, .container2 {
+        width: 100%;
+    }
+    .logo {
+        width: 70%;
+        height: auto;
+        font-size: 3vw;
+        font-weight: bolder;
+    }
+    .menu {
+        flex-direction: column;
+    }
+    .submenu-content {
+        position: static;
+        display: none;
+    }
+    .submenu:hover .submenu-content {
+        display: block;
+    }
+    .map

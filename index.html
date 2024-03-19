@@ -1,14 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jose Miguel Martínez</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>Jose Miguel Martínez</h1>
-    <a href="exercicis/ex1.html">Exercici 1</a>
-    <a href="exercicis/ex2.html">Exercici 2</a>
+    <header>
+        <div class="container">
+            <h1>Jose Miguel Martínez</h1>
+            <img src="imagenes_index/imagen.png" alt="Foto de Jose Miguel Martínez" width="200px">
+            <p>Estudiant d'Informàtica</p>
+            <nav>
+                <ul>
+                    <li><a href="#estudis">Estudis</a></li>
+                    <li><a href="#curriculum">Currículum</a></li>
+                    <li><a href="#projectes">Projectes</a></li>
+                    <li><a href="#exercicis">Exercicis HTML</a></li>
+                    <li><a href="#sobre_mi">Sobre Mi</a></li>
+                    <li><a href="#contacte">Contacte</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <section id="estudis">
+            <h2>Estudis</h2>
+            <p>ESO i BAXILLERAT</p>
+        </section>
+        <section id="curriculum">
+            <h2>Currículum</h2>
+            <a href="imagenes_index/Jose Miguel.pdf" download class="btn">Descarregar Currículum</a>
+        </section>
+        <section id="projectes">
+            <h2>Projectes</h2>
+            <div class="project-grid">
+                <div class="project" onclick="window.location.href='exercicis/ex1.html';">
+                    <h3>Exercici 1</h3>
+                    <p>Kebab online</p>
+                </div>
+                <div class="project" onclick="window.location.href='exercicis/ex2.html';">
+                    <h3>Exercici 2</h3>
+                    <p>Grup musica</p>
+                </div>
+                <div class="project" onclick="window.location.href='exercicis/ex3.html';">
+                    <h3>Exercici 3</h3>
+                    <p>Pagina Viladorms</p>
+                </div>
+            </div>
+        </section>
+        <section id="sobre_mi">
+            <h2>Sobre Mi</h2>
+            <p>Em dic Miguel i m'hagrada la programació, escoltar musica i sortir amb els meus amics</p>
+        </section>
+        <section id="contacte">
+            <h2>Contacte</h2>
+            <p>Correu electrònic: josemiguelmartinezhh@inscastellet.cat</p>
+        </section>
+    </div>
+    <footer>
+        <div class="container">
+            <p>Drets d'autor © 2024 Jose Miguel Martínez</p>
+        </div>
+    </footer>
 </body>
 </html>
-
